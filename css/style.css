@@ -30,7 +30,7 @@
 }
 
 h1 {
-  font-size: 48px;
+  font-size: 34px;
   color: var(--white-color);
 }
 h2 {
@@ -347,6 +347,9 @@ footer .small {
   .navbar_clock {
     display: none;
   }
+  .swiper-slide img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -374,6 +377,9 @@ footer .small {
   .menubar {
     position: relative;
     display: none;
+  }
+  .swiper-slide img {
+    width: 100%;
   }
   .movies iframe {
     width: 32%;
