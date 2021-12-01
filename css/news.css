@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Emilys+Candy&family=Katibeh&family=Lora&family=Noto+Serif+JP:wght@200;300&family=Nunito+Sans&family=Peddana&family=Rubik&family=Shippori+Antique+B1&family=Staatliches&family=Zen+Antique&display=swap");
+
 /* Setting */
 
 :root {
@@ -13,7 +15,6 @@
   --link-color: #404040;
   --p-color: black;
 
-  --base-font-family: "Plain", sans-serif;
   --font-weight-bold: bold;
   --font-weight-normal: normal;
   --font-weight-light: 300;
@@ -27,6 +28,34 @@
   --h6-font-size: 18px;
   --p-font-size: 16px;
   --s-font-size: 14px;
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--white-color);
+}
+h2 {
+  font-size: 32px;
+  color: var(--white-color);
+}
+h3 {
+  font-size: 24px;
+  color: var(--white-color);
+}
+h4 {
+  font-size: 20px;
+  color: var(--white-color);
+}
+h5 {
+  font-size: 18px;
+  color: var(--white-color);
+}
+h6 {
+  font-size: 16px;
+  color: var(--white-color);
+}
+p {
+  font-size: 14px;
 }
 
 * {
@@ -47,7 +76,7 @@ li {
 }
 
 a {
-  font-size: var(--h5-font-size);
+  font-size: var(--h6-font-size);
   text-decoration: none;
   color: white;
   transition: 0.2s ease-in;
@@ -55,10 +84,6 @@ a {
 
 a:hover {
   color: var(--sakura-color);
-}
-
-p {
-  font-size: var(--h6-font-size);
 }
 
 /* ===================== Main ======================= */
@@ -70,7 +95,6 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: absolute;
   padding-top: 1%;
 }
 
@@ -93,10 +117,15 @@ p {
   opacity: 0.6;
 }
 .navbar_icons {
-  width: 20%;
+  min-width: 20%;
 }
 .navbar_icons a {
   padding: 8px 12px;
+}
+#toggleBtn {
+  position: absolute;
+  right: 5%;
+  display: none;
 }
 
 /* Menu bar */
@@ -106,9 +135,6 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  position: absolute;
-  top: 10%;
 }
 .menu li p {
   font-size: var(--h5-font-size);
@@ -118,4 +144,153 @@ p {
 }
 .menu li a {
   font-size: var(--h6-font-size);
+}
+
+/* Main */
+.main {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Noto Serif JP", serif;
+}
+.main p {
+  font-size: 12px;
+  opacity: 0.6;
+}
+.main h6 {
+  width: 100%;
+  font-size: 12px;
+  padding: 2% 0%;
+  opacity: 0.6;
+}
+.main .content {
+  opacity: 0.8;
+}
+.main a {
+  font-size: 16px;
+}
+.main .sony {
+  padding-top: 5%;
+  padding-bottom: 2%;
+  margin-left: 50%;
+}
+.main .sony a {
+  font-size: 12px;
+}
+.main .news {
+  width: 55%;
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2%;
+  cursor: pointer;
+}
+.main .news:hover a {
+  text-decoration-line: underline;
+}
+
+/* Footer */
+footer {
+  width: 100%;
+  height: auto;
+  padding: 3% 0%;
+}
+footer .banner {
+  text-align: center;
+}
+footer .banner img {
+  width: 40%;
+  cursor: pointer;
+}
+footer .banner img:hover {
+  opacity: 0.5;
+}
+footer .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2% 0%;
+}
+footer .icons a {
+  padding: 8px 20px;
+}
+footer .menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .small {
+  text-align: center;
+  padding-top: 2%;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 1025px) {
+  .navbar_icons {
+    display: none;
+  }
+  .navbar_clock {
+    display: none;
+  }
+  .main .sony {
+    margin-top: 8%;
+    margin-bottom: 2%;
+  }
+  .main .news {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .menubar {
+    display: none;
+  }
+  .menu li {
+    padding: 16px;
+  }
+  .menubar.active {
+    display: flex;
+  }
+  #toggleBtn {
+    display: block;
+  }
+  .topics {
+    width: 90%;
+  }
+  .video {
+    display: none;
+  }
+  .header {
+    position: relative;
+  }
+  .menubar {
+    position: relative;
+    display: none;
+  }
+  .movies iframe {
+    width: 32%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 501px) {
+  .menu li {
+    padding: 10px;
+  }
+  .main .news {
+    margin-bottom: 10%;
+  }
+  .main .news a {
+    font-size: 12px;
+  }
+  .main .news h6 {
+    font-size: 10px;
+  }
+  .main .news p {
+    font-size: 10px;
+  }
+  footer .menu li {
+    padding: 12px;
+  }
 }

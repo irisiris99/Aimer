@@ -19,3 +19,10 @@ let swiper = new Swiper('.swiper-container', {
 		color: 'white'
 	},
 });
+
+const toggleBtn = document.getElementById('toggleBtn');
+const menu = document.querySelector('.menubar');
+
+toggleBtn.addEventListener('click', () => {
+	menu.classList.toggle('active');
+})
