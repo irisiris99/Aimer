@@ -230,18 +230,18 @@ p {
 .section3 {
   width: 100%;
   height: 1200px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .section3 .title {
   padding-bottom: 2%;
 }
 .section3 .movies {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .section3 .movies iframe {
+  width: 31%;
+  height: auto;
   padding: 10px;
 }
