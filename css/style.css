@@ -197,10 +197,6 @@ p {
 .topics h1 {
   text-align: center;
   border-bottom: 1px solid lightgray;
-  cursor: pointer;
-}
-.topics h1:hover {
-  opacity: 0.6;
 }
 .topics a {
   transition: none;
@@ -399,5 +395,13 @@ footer .small {
   }
   footer .menu li {
     padding: 8px;
+  }
+  .section3 .movies iframe {
+    display: none;
+  }
+  #movie {
+    display: block;
+    width: 400px;
+    height: 300px;
   }
 }
