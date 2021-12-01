@@ -140,7 +140,7 @@ a:hover {
   font-size: var(--h5-font-size);
 }
 .menu li {
-  padding: 8px 30px;
+  padding: 8px 24px;
 }
 .menu li a {
   font-size: var(--h6-font-size);
