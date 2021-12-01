@@ -234,7 +234,14 @@ p {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 .section3 .title {
   padding-bottom: 2%;
+}
+.section3 .movies {
+  text-align: center;
+}
+.section3 .movies iframe {
+  padding: 10px;
 }
