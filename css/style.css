@@ -357,7 +357,7 @@ footer .small {
     display: none;
   }
   .menu li {
-    padding: 16px;
+    padding: 12px;
   }
   .menubar.active {
     display: flex;
@@ -398,6 +398,6 @@ footer .small {
     width: 100%;
   }
   footer .menu li {
-    padding: 12px;
+    padding: 8px;
   }
 }
