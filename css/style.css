@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Emilys+Candy&family=Katibeh&family=Lora&family=Noto+Serif+JP:wght@200;300&family=Nunito+Sans&family=Peddana&family=Rubik&family=Shippori+Antique+B1&family=Staatliches&family=Zen+Antique&display=swap");
+
 /* Setting */
 
 :root {
@@ -193,6 +195,7 @@ p {
 .topics {
   width: 60%;
   padding: 2%;
+  font-family: "Noto Serif JP", serif;
 }
 .topics h1 {
   text-align: center;
@@ -385,10 +388,17 @@ footer .small {
 
 @media screen and (max-width: 501px) {
   .menu li {
-    padding: 10px;
+    padding: 5px;
   }
   .topics {
     width: 90%;
+  }
+  .topics h1 {
+    font-size: 24px;
+    padding-bottom: 20px;
+  }
+  .topics div p {
+    font-size: 12px;
   }
   .swiper-slide img {
     width: 100%;

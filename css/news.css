@@ -276,7 +276,7 @@ footer .small {
 
 @media screen and (max-width: 501px) {
   .menu li {
-    padding: 10px;
+    padding: 4px;
   }
   .main .news {
     margin-bottom: 10%;
@@ -291,6 +291,6 @@ footer .small {
     font-size: 10px;
   }
   footer .menu li {
-    padding: 12px;
+    padding: 6px;
   }
 }
